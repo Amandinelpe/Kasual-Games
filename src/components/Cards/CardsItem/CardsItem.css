@@ -1,0 +1,103 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20vw;
+  height: 55vh;
+  background-image: url("../../../assets/cards.jpeg");
+  border-radius: 15px;
+  border: 1px solid #daa520;
+  color: white;
+  -webkit-box-shadow: 4px 3px 7px 1px #daa520;
+  box-shadow: 3px 3px 7px 1px #daa520;
+}
+
+.image img {
+  width: auto;
+  height: 30vh;
+}
+
+.name {
+  font-family: "BenchNine", sans-serif;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid #daa520;
+  font-size: 12px;
+  text-align: center;
+}
+
+.content {
+  font-family: "BenchNine", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.type {
+  font-family: "BenchNine", sans-serif;
+  height: 5vh;
+  font-size: 20px;
+  padding-top: 0;
+}
+
+.desciption {
+  font-family: "BenchNine", sans-serif;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.description .faction,
+.description .class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: space-between;
+  gap: 60px;
+  height: 3vh;
+}
+
+.description .faction div,
+.description .class div {
+  display: block;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .image img {
+    width: auto;
+    height: 10vh;
+  }
+
+  .cards {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .description .faction p,
+  .description .class p {
+    width: 10vw;
+    font-size: 13px;
+  }
+
+  .description .faction,
+  .description .class {
+    gap: 50px;
+  }
+
+  .type {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+}

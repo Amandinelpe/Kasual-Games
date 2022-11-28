@@ -1,0 +1,28 @@
+.nav-button {
+  aspect-ratio: 1;
+  display: block;
+  width: 200px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  color: #fff;
+  font-size: 50px;
+  font-family: "Big Shoulders Stencil Display", cursive;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.nav-button-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-button:hover {
+  border: 1px solid #fff;
+}
+
+.nav-button.active {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #0b0d17;
+}

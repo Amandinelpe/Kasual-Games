@@ -1,0 +1,83 @@
+.navbar {
+  z-index: 10;
+  top: 0;
+  height: 14vmin;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.left-side,
+.right-side,
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.navbar .left-side {
+  font-family: "Saira", sans-serif;
+  font-size: 0.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar ul {
+  font-family: "Saira", sans-serif;
+  align-items: flex-end;
+  gap: 2vw;
+  list-style-type: none;
+  padding: 2px;
+  margin: 0.5vw;
+}
+
+.navbar .logo {
+  height: 20vh;
+  padding-right: 1vh;
+}
+
+.navbar .right-side {
+  font-family: "Saira", sans-serif;
+  gap: 2vw;
+  font-size: 0.7em;
+  margin-right: 2vw;
+}
+
+.navbar a {
+  color: unset;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side a {
+  font-size: 1.2vmin;
+}
+
+.right-side a {
+  font-size: 1.3vmin;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .right-side {
+    font-size: 0.5em;
+  }
+  .navbar .left-side {
+    display: block;
+    font-size: 26px;
+    margin: 1vw;
+  }
+
+  .navbar .logo {
+    height: 10vh;
+    padding-right: 1vh;
+    padding-top: 1vh;
+  }
+}
