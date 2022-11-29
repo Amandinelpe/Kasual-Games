@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap");
-
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 25vh;
+  padding-bottom: 30vh;
+ 
+}
 .title h1 {
   font-size: 9em;
   padding-left: 25px;
@@ -33,7 +41,23 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container {
+  .home {
     padding-top: 5vh;
+  }
+
+  .title h1 {
+    font-size: 5em;
+  }
+
+  .nav-button-list {
+    gap: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .content {
+    padding-top: 15vh;
   }
 }

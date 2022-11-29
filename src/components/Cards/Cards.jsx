@@ -8,7 +8,7 @@ const Cards = (props) => {
   const { url } = props;
   const [loading, setLoading] = useState(true);
   const [cards, setCards] = useState([]);
-  const [ showNoCardsMessage, setShowNoCardsMessage ] = useState(false);
+  const [showNoCardsMessage, setShowNoCardsMessage] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -31,17 +31,18 @@ const Cards = (props) => {
   }, [url]);
 
   return (
-    <div className="container">
+    <div className="container" whileHover={{ scale: 1.1 }}>
       {loading ? (
         <Loading />
+      ) : showNoCardsMessage ? (
+        <div className="no-card-found">
+          <p>No cards found</p>
+        </div>
       ) : (
-        showNoCardsMessage ?
-        ( <p>No card found</p> )
-          : cards.filter((card) => card.img && card.imgGold)
-            //.slice(0, 20)
-            .map((card) => (
-              <CardsItem key={card.cardId} card={card} />
-            ))
+        cards
+          .filter((card) => card.img && card.imgGold)
+          .slice(0, 10)
+          .map((card) => <CardsItem key={card.cardId} card={card} />)
       )}
     </div>
   );

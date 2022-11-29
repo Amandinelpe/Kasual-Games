@@ -15,7 +15,6 @@
   font-size: 20px;
   margin-top: 7px;
   margin-left: 7px;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -24,6 +23,11 @@
     margin-right: 2.5vw;
     margin-left: 3vw;
     border-radius: 20px;
-    height: 2vh;
+    height: 3vh;
+  }
+  .input-search-icon {
+    font-size: 4vmin;
+    margin-top: 0.9vh;
+    margin-left: 5vw;
   }
 }

@@ -66,18 +66,18 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navbar .right-side {
-    font-size: 0.5em;
+  .navbar .right-side a {
+    font-size: 0.6em;
   }
   .navbar .left-side {
     display: block;
-    font-size: 26px;
+    font-size: 28px;
     margin: 1vw;
   }
 
   .navbar .logo {
     height: 10vh;
     padding-right: 1vh;
-    padding-top: 1vh;
+    padding-top: 3vh;
   }
 }

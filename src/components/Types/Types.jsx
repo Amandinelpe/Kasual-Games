@@ -27,7 +27,7 @@ const Types = () => {
   }, []);
 
   return (
-      <div className="container">
+      <div className="container-type">
         {loading ? (
           <Loading />
         ) : (
