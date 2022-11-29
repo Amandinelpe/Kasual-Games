@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loading from "./components/Loading/Loading";
 import Mention from "./components/Mentions/Mention";
-
+import TypesButton from "./components/ButtonTypes/ButtonType";
 import "./App.css";
 
 const App = () => {
@@ -43,6 +43,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/Cards" element={<Cards cards={cards} />} />
             <Route path="/Mentions" element={<Mention />} />
+            <Route path="/Types" element={<TypesButton />} />
           </Routes>
           <Footer />
         </BrowserRouter>
