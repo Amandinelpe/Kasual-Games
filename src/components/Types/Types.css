@@ -1,6 +1,7 @@
-.nav-button {
+.type-button {
   aspect-ratio: 1;
   display: block;
+  flex-direction: row;
   width: 200px;
   border-radius: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -12,16 +13,20 @@
   transition: 0.25s;
 }
 
-.nav-button-link {
+.type-button-link {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-button:hover {
+.type-button p {
+  text-transform: uppercase;
+}
+
+.type-button:hover {
   border: 1px solid #fff;
 }
 
-.nav-button.active {
+.type-button.active {
   border: 1px solid #fff;
   background-color: #fff;
   color: #0b0d17;

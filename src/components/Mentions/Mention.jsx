@@ -1,4 +1,3 @@
-import { PropTypes } from "prop-types";
 import mentionData from "./utils/mentionData";
 import "./Mention.css";
 
@@ -8,10 +7,10 @@ const Mentions = () => {
       <div className="mentions">
         <h1>{mentionData.title}</h1>
         <div className="paragraphes">
-          {mentionData.paragraphs.map((paragraph) => (
-            <div className="paragraphes-item">
-              {paragraph.lignes.map((ligne) => (
-                <p>{ligne}</p>
+          {mentionData.paragraphs.map((paragraph, index) => (
+            <div key={index} className="paragraphes-item">
+              {paragraph.lignes.map((ligne, index) => (
+                <p key={index}>{ligne}</p>
               ))}
             </div>
           ))}
@@ -19,10 +18,6 @@ const Mentions = () => {
       </div>
     </div>
   );
-};
-
-Mentions.propTypes = {
-  userName: PropTypes.string.isRequired,
 };
 
 export default Mentions;

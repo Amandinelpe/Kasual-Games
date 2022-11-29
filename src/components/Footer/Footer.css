@@ -1,9 +1,11 @@
-.footer {
+.footer .paragraphes-items {
     border-top: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "Big Shoulders Stencil Display", cursive;
+    font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     gap: 2px;

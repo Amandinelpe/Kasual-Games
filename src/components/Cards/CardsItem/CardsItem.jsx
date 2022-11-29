@@ -1,7 +1,7 @@
 import React from "react";
 import "./CardsItem.css";
 
-const Cards = (props) => {
+const CardsItem = (props) => {
   const { card } = props;
   return (
     <div className="cards">
@@ -21,7 +21,7 @@ const Cards = (props) => {
               <p>Faction</p>
             </div>
             <div>
-              <p>{card.faction}</p>
+              <p>{card.faction ?? "-"}</p>
             </div>
           </div>
           <div className="class">
@@ -29,7 +29,7 @@ const Cards = (props) => {
               <p>Class</p>
             </div>
             <div>
-              <p>{card.playerClass}</p>
+              <p>{card.playerClass ?? "-"}</p>
             </div>
           </div>
         </div>
@@ -38,4 +38,4 @@ const Cards = (props) => {
   );
 };
 
-export default Cards;
+export default CardsItem;

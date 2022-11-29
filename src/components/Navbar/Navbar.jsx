@@ -13,9 +13,9 @@ const NavBar = () => {
       </div>
       <div className="right-side">
         <ul>
-          {DataNavbar.map((item) => {
+          {DataNavbar.map((item, index) => {
             return (
-              <li key={item.id}>
+              <li key={index}>
                 <Link to={item.path}><h1>{item.name}</h1></Link>
               </li>
             );
