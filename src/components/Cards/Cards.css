@@ -12,9 +12,10 @@
 .no-card-found {
   font-family: "Big Shoulders Stencil Display", cursive;
   font-size: 50px;
+  padding-bottom: 45vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .container {
     padding-top: 5vh;
   }

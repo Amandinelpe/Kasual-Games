@@ -22,7 +22,12 @@ const Cards = (props) => {
       })
       .then((response) => {
         setLoading(false);
-        setCards(response.data);
+        var cardsResponseWithImage = response.data.filter(
+          (card) => card.img && card.imgGold
+        );
+        cardsResponseWithImage.length === 0
+          ? setShowNoCardsMessage(true)
+          : setCards(cardsResponseWithImage);
       })
       .catch(() => {
         setLoading(false);
@@ -40,7 +45,6 @@ const Cards = (props) => {
         </div>
       ) : (
         cards
-          .filter((card) => card.img && card.imgGold)
           .slice(0, 10)
           .map((card) => <CardsItem key={card.cardId} card={card} />)
       )}
